@@ -1,0 +1,36 @@
+.mc-container{
+    height: 300px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.2s;
+    position: relative;
+    cursor: pointer;
+    padding: 0px 20px;
+    /* background-color: red; */
+}
+
+.mc-container img{
+    border-radius: 15px;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.mc-container:hover{
+    transform: scale(1.05);
+}
+
+.mc-container span{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 110px;
+    top: 45%;
+    font-weight: 900;
+    left: -5px;
+    color: black;
+    -webkit-text-stroke: 0.1rem rgb(255,255,255);
+    font-family: "Inter", sans-serif;
+    letter-spacing: 3px;
+    user-select: none;
+    
+}

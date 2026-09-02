@@ -1,0 +1,36 @@
+.default-footer{
+    font-family: "Inter", sans-serif;
+    padding: 10px 0px 80px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(190, 190, 190);
+    
+}
+
+.default-footer ul{
+    list-style: none;
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.default-footer a{
+    color: inherit;
+}
+
+.f-ni{
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: "Inter";
+}
+
+.fg{
+    color: grey;
+    font-size: 13px;
+    font-family: "Inter";
+}

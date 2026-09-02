@@ -1,0 +1,46 @@
+.dc-container{
+    height: 330px;
+    border-radius: 15px;
+    width: 300px;
+    background:
+        linear-gradient(
+            135deg,
+            #171936 0%,
+            #1d1d3a 40%,
+            #24182f 70%,
+            #28131f 100%
+        );
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+.dc-heading{
+    color: white;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 650;
+    display: block;
+    max-width: 220px;
+}
+
+.dc-text{
+    color: rgb(185, 185, 185);
+    padding-top: 10px;
+    line-height: 1.4;
+}
+
+.dc-graphics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}

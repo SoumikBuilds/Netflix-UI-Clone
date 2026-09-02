@@ -1,0 +1,243 @@
+.landing-page-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.lp-main{
+    width: 100%;
+    max-width: 2000px;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* max-height: 900px; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../assets/background.jpg");
+    
+}
+
+.footer-sec{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    padding: 0px 50px;
+    /* background-color: red; */
+}
+
+.lpm-nav {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 0px 15%;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.199);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.151);
+
+    z-index: 100;
+}
+
+.lpm-nav > * {
+    position: relative;
+    z-index: 101;
+}
+
+.lpm-logo{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lpmn-action{
+    display: flex;
+    width: 50%;
+    align-items: center;    
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.lpm-hero{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lpm-hero span{
+    color: white;
+}
+
+.lpm-hero {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.lpm-hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 250px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.3) 40%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+
+    pointer-events: none;
+}
+
+.lpmh-main{
+    margin-top: 50px;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 600px;
+    text-align: center;
+    max-width: 600px;
+     text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 4px 12px rgba(0, 0, 0, 0.5);
+    word-spacing: 2px;
+    font-family: "Inter", sans-serif;
+}
+
+.lpmh-sub{
+    color: white;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin-top: 9px;
+}
+
+.lpmh-tag{
+    color: white;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-top: 23px;
+    margin-bottom: 17px;
+}
+
+.lpmh-info{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lp-bm {
+    width: 100%;
+    max-width: 2000px;
+
+    min-height: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px;
+    gap: 50px;
+
+    background: #000;
+}
+
+.lp-bm-section{
+    /* max-width: 1500px; */
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 100%; */
+    /* color: white; */
+    overflow-x: hidden;
+}
+
+.lp-bm-h{
+    color: white;
+    font-size: 32px;
+    letter-spacing: .2px;
+    word-spacing: 0px;
+    /* width: 400px; */
+    display: flex;
+    text-align: start;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.lp-bmc-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.lp-bmc {
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.lp-bmc::-webkit-scrollbar {
+    display: none;
+}
+
+.lp-bmc-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.lp-bmc-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.lp-bmc-left {
+    left: 0;
+}
+
+.lp-bmc-right {
+    right: 0;
+}
+
+.lp-bmc-qs{
+    flex-direction: column;
+    gap: 10px;
+}

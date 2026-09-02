@@ -1,0 +1,203 @@
+
+/* =========================
+   BUTTON WRAPPER
+========================= */
+
+.button-wrapper {
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   DEFAULT BUTTON
+========================= */
+
+.button {
+    width: fit-content;
+    height: 35px;
+
+    background-color: rgb(230, 4, 4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    padding: 4px 16px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    font-family: "Roboto", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    user-select: none;
+    -moz-user-select: none;
+
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: rgb(189, 4, 4);
+}
+
+
+/* =========================
+   LANGUAGE BUTTON
+========================= */
+
+.language-wrapper {
+    position: relative;
+}
+
+.lang-button {
+    background-color: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    min-width: 125px;
+    height: 34px;
+
+    padding: 3px 10px;
+
+    gap: 7px;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+.lang-button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+
+    border-color: white;
+}
+
+
+/* =========================
+   LANGUAGE ICON
+========================= */
+
+.lang-button svg {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   ARROW
+========================= */
+
+.lb-da {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.2s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.language-dropdown {
+    position: absolute;
+
+    top: calc(100% + 8px);
+    right: 0;
+
+    min-width: 150px;
+
+    background: #111;
+
+    border: 1px solid #444;
+
+    border-radius: 4px;
+
+    padding: 5px 0;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+
+    z-index: 100;
+}
+
+
+/* =========================
+   DROPDOWN OPTIONS
+========================= */
+
+.language-option {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 14px;
+
+    color: #ddd;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.language-option:hover {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+
+/* =========================
+   SELECTED LANGUAGE
+========================= */
+
+.language-option.selected {
+    color: white;
+    font-weight: 600;
+}
+
+.language-option.selected::before {
+    content: "";
+
+    width: 3px;
+    height: 18px;
+
+    background-color: #e50914;
+
+    position: absolute;
+
+    left: 0;
+}
+
+
+/* =========================
+   GET STARTED BUTTON
+========================= */
+
+.large-gs {
+    height: 50px;
+
+    font-size: 20px;
+}
+
